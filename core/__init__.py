@@ -1,0 +1,1 @@
+''' This module contains the core functionality for the image watermarking application. '''
