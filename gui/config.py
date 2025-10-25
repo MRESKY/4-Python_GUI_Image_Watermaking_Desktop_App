@@ -1,6 +1,8 @@
 ''' This module contains reusable GUI components for the image watermarking application. '''
+from .contracts import *
 
-COLORS = {
+
+COLORS: ColorPalette = {
     'primary': '#2E3440',
     'secondary': '#3B4252', 
     'accent': '#5E81AC',
@@ -53,3 +55,43 @@ LABEL_STYLE = {
     'bg': COLORS['surface'],
     'fg': COLORS['text']
 }
+
+BUTTONS = {
+    "add_single_watermark": {
+        "text": "Add Single Image",
+    },
+    "add_batch_watermark": {
+        "text": "Add Batch Images",
+    },
+    "quit": {
+        "text": "Quit",
+        "shortcut": "Ctrl+Q"
+    },
+    "open_image": {
+        "text": "Open Image",
+        "tooltip": "Open an image to add a watermark",
+        "shortcut": "Ctrl+O"
+    },
+    "save_image": {
+        "text": "Save Image",
+        "tooltip": "Save the watermarked image",
+        "shortcut": "Ctrl+S"
+    },
+    "apply_watermark": {
+        "text": "Apply Watermark",
+        "tooltip": "Apply the watermark to the image",
+        "shortcut": "Ctrl+A"
+    },
+    "remove_watermark": {
+        "text": "Remove Watermark",
+        "tooltip": "Remove the watermark from the image",
+        "shortcut": "Ctrl+R"
+    },
+    "info": {
+        "text": "Info",
+        "tooltip": "Show application information",
+        "shortcut": "F1"
+    }
+
+}
+
