@@ -1,5 +1,5 @@
 ''' This module contains reusable GUI components for the image watermarking application. '''
-from .contracts import *
+from contracts import *
 
 
 COLORS: ColorPalette = {
@@ -56,6 +56,15 @@ LABEL_STYLE = {
     'fg': COLORS['text']
 }
 
+INPUT_STYLE = {
+    'font': FONTS['body'],
+    'bg': COLORS['surface'],
+    'fg': COLORS['text'],
+    'borderwidth': 1,
+    'relief': 'solid',
+    'padding': 5
+}
+
 BUTTONS = {
     "add_single_watermark": {
         "text": "Add Single Image",
@@ -94,4 +103,6 @@ BUTTONS = {
     }
 
 }
+
+
 
