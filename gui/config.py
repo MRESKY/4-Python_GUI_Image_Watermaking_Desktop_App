@@ -1,8 +1,6 @@
 ''' This module contains reusable GUI components for the image watermarking application. '''
-from contracts import *
 
-
-COLORS: ColorPalette = {
+COLORS = {
     'primary': '#2E3440',
     'secondary': '#3B4252', 
     'accent': '#5E81AC',
@@ -23,15 +21,18 @@ FONTS = {
     'button': ('Helvetica', 12, 'bold'),
 }
 
+# Shortcut for button font
+BUTTON_FONT = FONTS['button']
+
 DIMENSIONS = {
-    'window_width': 1200,
-    'window_height': 800,
-    'preview_width': 400,
-    'preview_height': 300,
+    'window_width': 1300,  # Slightly wider
+    'window_height': 950,  # Taller for better fit
+    'preview_width': 450,  # Bigger preview
+    'preview_height': 350,
     'button_height': 35,
-    'padding_small': 5,
-    'padding_medium': 10,
-    'padding_large': 20
+    'padding_small': 3,    # Reduced padding
+    'padding_medium': 8,
+    'padding_large': 15
 }
 
 BUTTON_STYLE = {
@@ -39,9 +40,7 @@ BUTTON_STYLE = {
     'bg': COLORS['accent'],
     'fg': 'white',
     'relief': 'flat',
-    'cursor': 'hand2',
-    'padx': 15,
-    'pady': 5
+    'cursor': 'hand2'
 }
 
 FRAME_STYLE = {
@@ -58,11 +57,10 @@ LABEL_STYLE = {
 
 INPUT_STYLE = {
     'font': FONTS['body'],
-    'bg': COLORS['surface'],
+    'bg': COLORS['background'],
     'fg': COLORS['text'],
-    'borderwidth': 1,
     'relief': 'solid',
-    'padding': 5
+    'bd': 1
 }
 
 BUTTONS = {
@@ -101,8 +99,4 @@ BUTTONS = {
         "tooltip": "Show application information",
         "shortcut": "F1"
     }
-
 }
-
-
-

@@ -1,2 +1,16 @@
-Pillow>=9.0.0
-tkinter (built-in)
+# Image processing
+Pillow>=10.0.0
+
+# GUI (tkinter is built-in with Python)
+# tkinter - built-in
+
+# Type hints for older Python versions (if needed)
+typing-extensions>=4.0.0
+
+# Optional: For better image format support
+# opencv-python>=4.8.0
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# mypy>=1.0.0
